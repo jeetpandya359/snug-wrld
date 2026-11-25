@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Palatino Linotype", Palatino, Georgia, serif;
+  --color-ink: #1a1916;
+  --color-paper: #f1eadf;
+  --color-stone: #6f675c;
+  --color-line: #e4dfd8;
+}
+
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.rack-scroll {
+  scrollbar-width: none;
+}
+
+.rack-scroll::-webkit-scrollbar {
+  display: none;
+}
